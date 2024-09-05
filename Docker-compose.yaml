@@ -4,5 +4,7 @@ services:
   bot:
     build: .
     restart: always
+    volumes:
+        - "./logs:/var/log/discord-bot"
     env_file:
       - .env
